@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(59, 54, 54);
+    --secondary-color: teal;
+    --text-color: lightgray;
+    a{
+        color: var(--text-color);
+        text-decoration: none;
+    }
+}
+
+header {
+    height: 80px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+    }
+    .search-btn {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
