@@ -8,10 +8,6 @@
     --main-color: rgb(59, 54, 54);
     --secondary-color: teal;
     --text-color: lightgray;
-    a{
-        color: var(--text-color);
-        text-decoration: none;
-    }
 }
 
 header {
@@ -20,6 +16,10 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    a{
+        color: var(--text-color);
+        text-decoration: none;
+    }
     .nav-links {
         display: flex;
         gap: 2rem;
