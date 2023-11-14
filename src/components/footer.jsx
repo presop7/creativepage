@@ -1,7 +1,7 @@
 import postCardFooterData from "../Data/postCardFooterData"
 import "../styles/Footer.scss"
 
-export default function Footer(props) {
+export default function Footer() {
     return (
         <>
         <footer>
@@ -83,7 +83,9 @@ export default function Footer(props) {
                     <p>Subscribe to our Newsletter to get important News and Amazing offers</p>
                     <div className="newsletterEmailInput">
                         <input type="email" placeholder="Enter email"/>
-                        <button>GO</button>
+                        <button>
+                            <p className="newsletterInputButtonText">GO</p>
+                        </button>
                     </div>
                 </div>
             </div>
