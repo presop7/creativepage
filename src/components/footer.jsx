@@ -39,14 +39,15 @@ export default function Footer() {
                 <div className="recentPosts">
                     <h3>RECENT POST</h3>
                     <div className="postCard" details={postCardFooterData}>
-                        {postCardFooterData.map((item, i) => {
+                        {postCardFooterData.map((item, i) => (
                             <div key={i}>
                                 <img src={item.img} alt="Post Image" />
                                 <h3>{item.title}</h3>
                                 <p>{item.description}</p>
                                 <h4>{item.date}</h4>
                             </div>
-                        })}
+                            )
+                        )}
 
                     </div>
                 </div>
