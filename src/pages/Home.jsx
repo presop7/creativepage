@@ -1,10 +1,12 @@
-import Hero from "../components/Hero.jsx";
-import Layout from "../components/Layout.jsx";
+import Hero from "../containers/Hero.jsx";
+import Layout from "../containers/Layout.jsx";
+import FirstRowOfCards from "../containers/FirstRowOfCards.jsx";
 
 export default function Home() {
-    return (
-        <Layout>
-            <Hero/>
-        </Layout>
-    )
+  return (
+    <Layout>
+      <Hero />
+      <FirstRowOfCards></FirstRowOfCards>
+    </Layout>
+  );
 }

@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  height: 24rem;
+  width: 100%;
+  min-width: 20rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  wrap img {
+    max-height: 6rem;
+  }
+}
+.cardSecondaryColor {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  border-top: 4px solid var(--accent-color);
+}
+.cardAccentColor {
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+  border-top: 4px solid var(--accent-text-color);
+}
