@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.aboutTabsContainer {
+  display: flex;
+  //   gap: 5rem;
+  justify-content: flex-start;
+  background-color: #090f14;
+  color: white;
+  position: relative;
+  .aboutImg {
+    max-width: 50%;
+    //   flex: 1 1 1;
+    object-fit: contain;
+    position: static;
+    bottom: 0;
+  }
+  .tabs-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 8rem;
+    //   flex: 2 1 1;
+    max-width: 40rem;
+    .separatorLines {
+      display: flex;
+      //   justify-content: center;
+      margin-top: 2rem;
+      margin-left: 7rem;
+    }
+    .tabs {
+      display: flex;
+      gap: 1rem;
+      .biographyTab {
+        display: flex;
+        gap: 1rem;
+      }
+      .tab-content .barsContainer {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+  }
+}

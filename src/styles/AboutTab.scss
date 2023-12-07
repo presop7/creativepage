@@ -1,0 +1,8 @@
+.tab {
+  padding: 2rem 0;
+  cursor: pointer;
+}
+.active {
+  color: var(--accent-color);
+  border-top: 2px solid var(--accent-color);
+}

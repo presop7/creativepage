@@ -4,14 +4,16 @@
   gap: 2rem;
   padding: 4rem 2rem;
   height: 24rem;
-  width: 100%;
-  min-width: 20rem;
+  min-width: 28rem;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  wrap img {
+  flex: 1 1 10rem;
+  img {
     max-height: 6rem;
   }
+}
+.card:nth-of-type(even) {
+  flex-shrink: 2;
 }
 .cardSecondaryColor {
   background-color: var(--secondary-color);
