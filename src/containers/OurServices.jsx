@@ -1,6 +1,7 @@
 import ServicesTab from "../components/ServicesTab";
 import ShiftedDoubleLineBorder from "../components/ShiftedDoubleLineBorder";
 import { useState } from "react";
+import "../styles/OurServices.scss";
 export default function OurServices() {
   const [activeTab, setActiveTab] = useState(1);
   const tabData = [
@@ -58,8 +59,12 @@ export default function OurServices() {
             />
           ))}
         </div>
-        {tabContentData.map((content, { index = activeTab }) => (
-          <div className="tabContent" key={index}>
+        {tabContentData.map((content, index) => (
+          <div
+            className="tabContent"
+            key={index}
+            style={{ display: index === activeTab ? "block" : "none" }}
+          >
             <img src={content.img} alt="" />
             <p>{content.lorem}</p>
           </div>
