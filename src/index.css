@@ -6,7 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+main {
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -20,10 +21,12 @@ code {
 
 :root {
   --main-color: #3c3c3c;
+  --third-color: #203e38;
+  --secondary-color: #1c2b33;
   --accent-color: #18cfab;
   --text-color: #959595;
-  --secondary-color: #1c2b33;
-  --light-secondary-color: #22353f;
   --accent-text-color: #f1f1f1;
+  --light-secondary-color: #22353f;
   --nav-color: #44433e;
+  --dark-color: #40474b;
 }

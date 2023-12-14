@@ -5,6 +5,9 @@ import FeaturesCardsContainer from "../containers/FeaturesCardsContainer.jsx";
 import AboutTabs from "../containers/AboutTabs.jsx";
 import OurWork from "../containers/OurWork.jsx";
 import OurServices from "../containers/OurServices.jsx";
+import PurchaseNowContainer from "../containers/PurchaseNowContainer.jsx";
+import BreakingNewsContainer from "../containers/BreakingNewsContainer.jsx";
+import SecondRowOfCards from "../containers/SecondRowOfCards.jsx";
 
 export default function Home() {
   const tabData = [
@@ -21,6 +24,9 @@ export default function Home() {
       <AboutTabs tabs={tabData} />
       <OurWork />
       <OurServices />
+      <PurchaseNowContainer />
+      <BreakingNewsContainer />
+      <SecondRowOfCards />
     </Layout>
   );
 }

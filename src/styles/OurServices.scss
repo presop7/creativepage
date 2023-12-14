@@ -3,41 +3,78 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  .headingContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-  }
-  .tabsContainer {
-    display: flex;
-    flex-direction: column;
-    max-width: 80vw;
-    .tabs {
+  margin: 6rem 0;
+  .widthContainer {
+    .headingContainer {
       display: flex;
-      gap: 1rem;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .tabsContainer {
+      display: flex;
+      flex-direction: column;
 
-      .tab {
+      .tabs {
         display: flex;
-        color: white;
         justify-content: center;
-        min-width: 12em;
-        background-color: var(--accent-color);
-        border: 3px solid darkblue;
-        position: relative;
-        .triangle {
+        flex-wrap: wrap;
+        .tab.active + .triangle {
           display: block;
           position: absolute;
-          width: 100px;
-          height: 100px;
-          z-index: 999;
-          bottom: -10;
-          left: 50%;
-          transform: rotate(45);
-          background-color: var(black);
+          overflow: visible;
+          width: 3rem;
+          height: 3rem;
+          z-index: -1;
+          bottom: 0;
+          left: 37%;
+          transform: rotate(45deg);
+          background-color: var(--accent-color);
+        }
+        .tabContainer {
+          position: relative;
+          margin-bottom: 3rem;
+          .tab {
+            display: flex;
+            justify-content: center;
+            min-width: 12em;
+            border: 1px solid lightgray;
+            flex: 1 0 calc(33.33% - 1px);
+            box-sizing: border-box;
+
+            &.active {
+              display: flex;
+              color: white;
+              justify-content: center;
+              min-width: 12em;
+              background-color: var(--accent-color);
+              border: 1px solid var(--accent-color);
+            }
+          }
+        }
+        .tab:not(:first) {
+          border-left: none;
+        }
+      }
+      .tabContent {
+        .tabContentContainer {
+          display: flex;
+          flex-direction: row;
+          gap: 2rem;
+          max-width: 1152px;
+          img {
+            min-width: 12.1em;
+            height: 8em;
+            background: grey;
+          }
+          p {
+            display: flex;
+            flex-wrap: wrap;
+            // margin-right: 2rem;
+            color: rgb(75, 75, 75);
+          }
         }
       }
     }

@@ -7,6 +7,7 @@ header {
   align-items: center;
   position: sticky;
   top: 0px;
+  z-index: 999;
   a {
     color: var(--text-color);
     text-decoration: none;
