@@ -36,13 +36,16 @@
         .tabContainer {
           position: relative;
           margin-bottom: 3rem;
-          .tab {
+          .serviceTab {
             display: flex;
             justify-content: center;
             min-width: 12em;
             border: 1px solid lightgray;
             flex: 1 0 calc(33.33% - 1px);
             box-sizing: border-box;
+            &:not(:first-child) {
+              border-left: 0;
+            }
 
             &.active {
               display: flex;
@@ -53,9 +56,6 @@
               border: 1px solid var(--accent-color);
             }
           }
-        }
-        .tab:not(:first) {
-          border-left: none;
         }
       }
       .tabContent {

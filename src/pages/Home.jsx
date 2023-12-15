@@ -8,6 +8,7 @@ import OurServices from "../containers/OurServices.jsx";
 import PurchaseNowContainer from "../containers/PurchaseNowContainer.jsx";
 import BreakingNewsContainer from "../containers/BreakingNewsContainer.jsx";
 import SecondRowOfCards from "../containers/SecondRowOfCards.jsx";
+import PricingTable from "../containers/PricingTable.jsx";
 
 export default function Home() {
   const tabData = [
@@ -27,6 +28,7 @@ export default function Home() {
       <PurchaseNowContainer />
       <BreakingNewsContainer />
       <SecondRowOfCards />
+      <PricingTable />
     </Layout>
   );
 }

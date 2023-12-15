@@ -1,0 +1,64 @@
+.pricingTableMainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  .heading {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .tableContainer {
+    display: flex;
+    table {
+      min-width: 18rem;
+      text-align: center;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      &:not(:first-child) {
+        border-left: 0;
+      }
+      tbody {
+        box-sizing: border-box;
+      }
+      th {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: gray;
+        padding: 1rem 0;
+        // border-bottom: 1px solid lightgray;
+      }
+      td {
+        border-bottom: 1px solid lightgray;
+        padding: 1rem 0;
+      }
+      .pricingRow {
+        background-color: var(--light-secondary-color);
+        color: var(--accent-text-color);
+        font-weight: 200;
+        box-sizing: border-box;
+        // td {
+        //   border: 1px solid var(--light-secondary-color);
+        // }
+        span {
+          font-size: 3rem;
+          font-weight: 700;
+        }
+      }
+      .buttonRow {
+        border-bottom: 0;
+      }
+      button {
+        padding: 1rem 3.5rem;
+        border: none;
+        border-radius: 2%;
+        background-color: var(--light-secondary-color);
+        color: var(--accent-text-color);
+        font-weight: 600;
+      }
+    }
+  }
+}
