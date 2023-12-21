@@ -31,15 +31,16 @@
     .tabs {
       display: flex;
       gap: 1rem;
-      .biographyTab {
+    }
+    .tab-content {
+      .barsContainer {
         display: flex;
         gap: 1rem;
       }
-      .tab-content {
-        .barsContainer {
-          display: flex;
-          gap: 1rem;
-        }
+      .biographyTab {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
       }
     }
   }
