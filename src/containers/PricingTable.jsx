@@ -1,5 +1,6 @@
 import ShiftedDoubleLineBorder from "../components/ShiftedDoubleLineBorder";
 import "../styles/PricingTable.scss";
+import OfferBand from "../assets/OfferBand.png";
 
 export default function PricingTable() {
   const tableData = [
@@ -35,6 +36,7 @@ export default function PricingTable() {
       info5: "3 Website Layouts",
       info6: "5 Header Style",
       info7: "3 Online Store",
+      class: "accentRow",
     },
     {
       heading: "DIAMOND",
@@ -57,12 +59,18 @@ export default function PricingTable() {
       <div className="tableContainer">
         {tableData.map((content, index) => (
           <>
-            <table key={index}>
+            <table key={index} className={content.class}>
               <tbody>
-                <tr>
+                <tr className={content.class}>
                   <th>{content.heading}</th>
+                  <img
+                    src={OfferBand}
+                    alt=""
+                    className={content.class}
+                    style={{ display: index === 2 ? "block" : "none" }}
+                  />
                 </tr>
-                <tr className="pricingRow">
+                <tr className={`pricingRow ${content.class}`}>
                   <td>
                     <span>${content.pricing}</span>/Month
                   </td>
@@ -89,7 +97,7 @@ export default function PricingTable() {
                   <td>{content.info7}</td>
                 </tr>
                 <tr>
-                  <td className="buttonRow">
+                  <td className={`buttonRow ${content.class}`}>
                     <button>BUY NOW</button>
                   </td>
                 </tr>

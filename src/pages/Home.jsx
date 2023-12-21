@@ -9,6 +9,8 @@ import PurchaseNowContainer from "../containers/PurchaseNowContainer.jsx";
 import BreakingNewsContainer from "../containers/BreakingNewsContainer.jsx";
 import SecondRowOfCards from "../containers/SecondRowOfCards.jsx";
 import PricingTable from "../containers/PricingTable.jsx";
+import WhatPeopleSay from "../containers/WhatPeopleSay.jsx";
+import MeetOurTeam from "../containers/MeetOurTeam.jsx";
 
 export default function Home() {
   const tabData = [
@@ -29,6 +31,8 @@ export default function Home() {
       <BreakingNewsContainer />
       <SecondRowOfCards />
       <PricingTable />
+      <WhatPeopleSay />
+      <MeetOurTeam />
     </Layout>
   );
 }
