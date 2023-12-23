@@ -1,3 +1,4 @@
+import Button from "../components/Button";
 import "../styles/PurchaseNowContainer.scss";
 export default function PurchaseNowContainer() {
   return (
@@ -7,7 +8,7 @@ export default function PurchaseNowContainer() {
         Smooth reliable, responsive ready, perfect portfolio, unique blog layout
         and many many options for you
       </p>
-      <button>PURCHASE NOW</button>
+      <Button style={"basicButton accentColor"} text={"PURCHASE NOW"} />
     </div>
   );
 }

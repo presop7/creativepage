@@ -1,5 +1,5 @@
 import ShiftedDoubleLineBorder from "../components/ShiftedDoubleLineBorder";
-import "..//styles/AboutTabs.scss";
+import "..//styles/AboutTabs/AboutTabs.scss";
 import { useState } from "react";
 import AboutTab from "../components/AboutTab.jsx";
 import aboutImage from "../assets/maskImgAboutTab.png";

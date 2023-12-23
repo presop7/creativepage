@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem 8rem;
+  margin: 2rem 4rem;
   .heading {
     display: flex;
     flex-direction: column;
@@ -18,8 +18,10 @@
   }
   .categories {
     display: flex;
+    justify-content: center;
     gap: 1rem;
     min-width: 20rem;
+    flex-wrap: wrap;
     button {
       font-size: 1.05rem;
       min-width: 6rem;
@@ -36,7 +38,7 @@
   }
   .workCatalog {
     display: flex;
-    max-width: 60vw;
+    max-width: 70vw;
     flex-wrap: wrap;
     justify-content: center;
 

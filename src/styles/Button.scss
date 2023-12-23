@@ -1,0 +1,33 @@
+.basicButton {
+  all: unset;
+  background-color: lightgray;
+  min-width: 11rem;
+  text-align: center;
+  padding: 1.2rem 0;
+  border-radius: 0.2rem;
+  border-top: 4px solid var(--accent-text-color);
+  font-weight: 700;
+  transition: scale 250ms ease-in-out;
+  &:hover {
+    scale: 1.05;
+  }
+  &:active {
+    box-shadow: 0 0 10px 0px inset rgba(0, 0, 0, 0.4);
+  }
+}
+.formSubmitButton {
+  //   max-width: 44rem;
+  width: 100%;
+  border: 0;
+  &:hover {
+    scale: 1.01;
+  }
+}
+.accentColor {
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+}
+.specialColor {
+  background-color: #00cbf6;
+  color: var(--accent-text-color);
+}

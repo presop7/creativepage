@@ -1,4 +1,4 @@
-import "../styles/FeatureCard.scss";
+import "../styles/FeaturesCardsContainer/FeatureCard.scss";
 
 export default function FeatureCard({ img, heading, description }) {
   return (

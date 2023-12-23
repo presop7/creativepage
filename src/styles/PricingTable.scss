@@ -10,18 +10,19 @@
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+    text-align: center;
   }
   .tableContainer {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     table {
       min-width: 18rem;
       text-align: center;
       border: 1px solid lightgray;
       border-radius: 5px;
       padding: 0;
-      &:not(:first-child) {
-        border-left: 0;
-      }
+      margin: 2rem 0;
       tbody {
         box-sizing: border-box;
       }

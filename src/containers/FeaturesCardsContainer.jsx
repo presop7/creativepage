@@ -1,4 +1,4 @@
-import "../styles/FeaturesCardsContainer.scss";
+import "../styles/FeaturesCardsContainer/FeaturesCardsContainer.scss";
 import FeatureCard from "../components/FeatureCard";
 import leaf from "../assets/leafIcon.png";
 import note from "../assets/note.png";

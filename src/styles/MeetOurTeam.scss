@@ -15,10 +15,13 @@
   gap: 2rem;
   .teamCardsContainer {
     display: flex;
-    gap: 2rem;
+    // gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
     .teamCard {
       display: flex;
       flex-direction: column;
+      margin: 1rem;
       .imgContainer {
         position: relative;
         .teamMemberImage {
@@ -101,6 +104,12 @@
           cursor: pointer;
           &:not(:first-child) {
             border-left: 1px solid white;
+          }
+          & > * {
+            transition: 250ms;
+          }
+          &:hover > * {
+            scale: 1.2;
           }
         }
       }

@@ -11,6 +11,8 @@ import SecondRowOfCards from "../containers/SecondRowOfCards.jsx";
 import PricingTable from "../containers/PricingTable.jsx";
 import WhatPeopleSay from "../containers/WhatPeopleSay.jsx";
 import MeetOurTeam from "../containers/MeetOurTeam.jsx";
+import PromotingSection from "../containers/PromotiongSection.jsx";
+import Contact from "../containers/Contact.jsx";
 
 export default function Home() {
   const tabData = [
@@ -33,6 +35,8 @@ export default function Home() {
       <PricingTable />
       <WhatPeopleSay />
       <MeetOurTeam />
+      <PromotingSection />
+      <Contact />
     </Layout>
   );
 }

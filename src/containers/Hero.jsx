@@ -1,4 +1,6 @@
+import Button from "../components/Button";
 import "../styles/Hero.scss";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -13,18 +15,21 @@ export default function Hero() {
       </div>
       {/* Hero Buttons */}
       <div className="heroButtonContainer">
-        <button>EXPLORE NOW</button>
-        <button>PURCHASE NOW</button>
+        <Button style={"basicButton accentColor"} text={"EXPLORE NOW"} />
+        <Button style={"basicButton specialColor"} text={"PURCHASE NOW"} />
+        {/* <button>PURCHASE NOW</button> */}
       </div>
       {/* Hero controls */}
       <div className="heroBannerChangebutton">
         <img src="#" alt="Next Hero Banner" className="mainImage" />
         <div className="controlButtonsContainer">
           <button>
-            <img src="#" alt="#" />
+            {/* <img src="#" alt="#" />? */}
+            <FaChevronLeft />
           </button>
           <button>
-            <img src="#" alt="#" />
+            {/* <img src="#" alt="#" />? */}
+            <FaChevronRight />
           </button>
         </div>
       </div>

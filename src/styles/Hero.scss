@@ -23,20 +23,6 @@
     display: flex;
     margin-top: 6rem;
     gap: 2rem;
-    button {
-      min-width: 10rem;
-      padding: 1.3rem 0rem;
-      border-top: 4px solid white;
-      border-radius: 6px;
-      color: var(--accent-text-color);
-      font-weight: 800;
-    }
-    button:nth-child(1) {
-      background-color: var(--accent-color);
-    }
-    button:nth-child(2) {
-      background-color: #00cbf6;
-    }
   }
   .heroBannerChangebutton {
     position: relative;
@@ -55,12 +41,14 @@
       align-items: center;
       gap: 2rem;
       button {
-        padding: 1rem;
+        all: unset;
+        padding: 1rem 1rem 0.8rem 1rem;
         aspect-ratio: 1/1;
         border: none;
       }
       button:nth-child(1) {
         background-color: #3c4140;
+        color: var(--text-color);
       }
     }
     button:nth-child(2) {
