@@ -43,7 +43,7 @@ export default function Footer() {
             <div className="postCard" details={postCardFooterData}>
               {postCardFooterData.map((item, i) => (
                 <div key={i}>
-                  <img src={item.img} alt="Post Image" />
+                  <img src={item.img} alt="Post" />
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
                   <h4>{item.date}</h4>
@@ -97,12 +97,12 @@ export default function Footer() {
         <div className="footerContainer">
           <div className="flickeFeed">
             <h3>FLICKE FEED</h3>
-            <img src="#" alt="Flicke Image" />
-            <img src="#" alt="Flicke Image" />
-            <img src="#" alt="Flicke Image" />
-            <img src="#" alt="Flicke Image" />
-            <img src="#" alt="Flicke Image" />
-            <img src="#" alt="Flicke Image" />
+            <img src="#" alt="Flicke" />
+            <img src="#" alt="Flicke" />
+            <img src="#" alt="Flicke" />
+            <img src="#" alt="Flicke" />
+            <img src="#" alt="Flicke" />
+            <img src="#" alt="Flicke" />
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@ export default function Footer() {
         {/* Footers copyright bar */}
         <div className="footerCopyright">
           <p>
-            Copyright 2023 <a href="#">theHam</a> | All rights Reserved
+            Copyright 2023 <a href="hero">theHam</a> | All rights Reserved
           </p>
         </div>
       </div>

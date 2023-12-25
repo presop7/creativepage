@@ -8,26 +8,47 @@ export default function Nav() {
   const OpenCloseNav = () => {
     navRef.current.classList.toggle("nav-menu");
   };
+  const CloseNav = () => {
+    navRef.current.classList.remove("nav-menu");
+  };
 
   return (
     <header>
       {/* Navigation Logo */}
       <div className="logo-container">
-        <a href="#">
+        <a href="hero">
           <img src={navLogo} alt="Navigation Logo" />
         </a>
       </div>
       {/* Navigation links / Navigation menu */}
       <div className="nav-links" ref={navRef}>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Skills</a>
-        <a href="#">Service</a>
-        <a href="#">Work</a>
-        <a href="#">Testimonials</a>
-        <a href="#">Blog</a>
-        <a href="#">Team</a>
-        <a href="#">Contact</a>
+        <a href="#home" onClick={CloseNav}>
+          Home
+        </a>
+        <a href="#about" onClick={CloseNav}>
+          About
+        </a>
+        <a href="#skills" onClick={CloseNav}>
+          Skills
+        </a>
+        <a href="#service" onClick={CloseNav}>
+          Service
+        </a>
+        <a href="#work" onClick={CloseNav}>
+          Work
+        </a>
+        <a href="#testimonials" onClick={CloseNav}>
+          Testimonials
+        </a>
+        <a href="#blog" onClick={CloseNav}>
+          Blog
+        </a>
+        <a href="#team" onClick={CloseNav}>
+          Team
+        </a>
+        <a href="#contact" onClick={CloseNav}>
+          Contact
+        </a>
         <button className="nav-close-btn" onClick={OpenCloseNav}>
           <FaTimes />
         </button>
