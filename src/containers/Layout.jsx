@@ -1,4 +1,4 @@
-import Footer from "../components/Footer";
+import Footer from "../components/Qjlaina";
 import Nav from "../components/Header";
 
 export default function Layout({ children }) {
