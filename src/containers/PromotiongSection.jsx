@@ -14,7 +14,7 @@ export default function PromotingSection() {
   ];
 
   return (
-    <div className="promotingSection">
+    <div className="promotingSection" id="skills">
       <div className="heading">
         <h1 className="whiteHeading">THIS IS NOT ONLY THEME</h1>
         <h1 className="accentHeading">IT'S ALSO CLEAN AND CREATIVE DESIGN</h1>
@@ -30,7 +30,9 @@ export default function PromotingSection() {
               <p>{content.text}</p>
             </div>
           ))}
-          <Button style={"basicButton accentColor"} text={"PURCHASE NOW"} />
+          <a href="#price">
+            <Button style={"basicButton accentColor"} text={"PURCHASE NOW"} />
+          </a>
         </div>
       </div>
     </div>

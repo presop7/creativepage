@@ -53,8 +53,11 @@
           object-fit: contain;
         }
       }
-      button {
-        margin-top: 2rem;
+      a {
+        all: unset;
+        button {
+          margin-top: 2rem;
+        }
       }
     }
   }

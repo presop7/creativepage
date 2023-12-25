@@ -18,7 +18,7 @@ export default function OurWork() {
   }
 
   return (
-    <div className="ourWorkContainer">
+    <div className="ourWorkContainer" id="work">
       <div className="heading">
         <h1>Our Amazing Work</h1>
         <div className="lines">

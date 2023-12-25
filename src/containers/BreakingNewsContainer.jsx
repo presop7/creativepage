@@ -60,7 +60,7 @@ export default function BreakingNewsContainer() {
     },
   ];
   return (
-    <div className="breakingNewsContainer">
+    <div className="breakingNewsContainer" id="blog">
       <div className="headingContainerNews">
         <h1>Breaking News</h1>
         <ShiftedDoubleLineBorder />

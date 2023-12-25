@@ -3,12 +3,13 @@ import "..//styles/AboutTabs/AboutTabs.scss";
 import { useState } from "react";
 import AboutTab from "../components/AboutTab.jsx";
 import aboutImage from "../assets/maskImgAboutTab.png";
+import SkillBar from "../components/AboutTabsContent/SkillBar.jsx";
 
 const AboutTabs = ({ tabs }) => {
-  const [activeTab, setActiveTab] = useState(1);
+  const [activeTab, setActiveTab] = useState(2);
 
   return (
-    <div className="aboutTabsContainer">
+    <div className="aboutTabsContainer" id="about">
       <img className="aboutImg" src={aboutImage} alt="" />
       <div className="tabs-container">
         <div className="headingContainer">
@@ -63,36 +64,11 @@ const AboutTabs = ({ tabs }) => {
           )}
           {activeTab === 2 && (
             <div className="barsContainer">
-              <div className="barOne externalBar">
-                <div className="barFillOne innerBar">
-                  <p className="text">Lorem, ipsum.</p>
-                </div>
-              </div>
-              <div className="barOne externalBar">
-                <div className="barFillOne innerBar">
-                  <p className="text">Lorem, ipsum.</p>
-                </div>
-              </div>
-              <div className="barOne externalBar">
-                <div className="barFillOne innerBar">
-                  <p className="text">Lorem, ipsum.</p>
-                </div>
-              </div>
-              <div className="barOne externalBar">
-                <div className="barFillOne innerBar">
-                  <p className="text">Lorem, ipsum.</p>
-                </div>
-              </div>
-              <div className="barOne externalBar">
-                <div className="barFillOne innerBar">
-                  <p className="text">Lorem, ipsum.</p>
-                </div>
-              </div>
-              <div className="barOne externalBar">
-                <div className="barFillOne innerBar">
-                  <p className="text">Lorem, ipsum.</p>
-                </div>
-              </div>
+              <SkillBar style={`a70`} text={"LOREM, IPSUM."} />
+              <SkillBar style={`a85`} text={"SAEPE, ODIO."} />
+              <SkillBar style={`a65`} text={"IPSAM, MINIMA."} />
+              <SkillBar style={`a95`} text={"COMMODI, NECESSITATIBUS."} />
+              <SkillBar style={`a90`} text={"REM, IUSTO."} />
             </div>
           )}
         </div>

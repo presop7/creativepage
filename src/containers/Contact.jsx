@@ -1,15 +1,9 @@
 import React, { useState } from "react";
 import Button from "../components/Button";
 import ShiftedDoubleLineBorder from "../components/ShiftedDoubleLineBorder";
-import MapLink from "../components/MapLink";
 import "../styles/Contact.scss";
 
 export default function Contact() {
-  const location = {
-    latitude: 37.7749, // Replace with your desired latitude
-    longitude: -122.4194, // Replace with your desired longitude
-  };
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -75,9 +69,18 @@ export default function Contact() {
   };
 
   return (
-    <div className="contactContainer">
+    <div className="contactContainer" id="contact">
       <div className="mapLink">
-        <MapLink latitude={location.latitude} longitude={location.longitude} />
+        <iframe
+          width="100%"
+          height="100%"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=1101 E University Ave, Fresno, CA 93741, United States&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          // scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe>
       </div>
       <div className="contactForm">
         <div className="heading">

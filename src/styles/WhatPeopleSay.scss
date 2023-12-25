@@ -65,6 +65,24 @@
       border-radius: 50%;
       border: 3px solid var(--accent-color);
       box-shadow: 0px 0px 1px 10px #18cfaa4b;
+      &.color1 {
+        background-color: rgb(212, 212, 212);
+      }
+      &.color2 {
+        background-color: rgb(182, 182, 182);
+      }
+      &.color3 {
+        background-color: rgb(131, 131, 131);
+      }
+      &.color4 {
+        background-color: rgb(63, 63, 63);
+      }
+      &.color5 {
+        background-color: rgb(8, 8, 8);
+      }
+      &.color6 {
+        background-color: rgb(44, 44, 51);
+      }
     }
 
     .imgSlider {
@@ -116,6 +134,24 @@
           }
           &.active {
             border: 2px solid var(--accent-color);
+          }
+          &.color1 {
+            background-color: rgb(212, 212, 212);
+          }
+          &.color2 {
+            background-color: rgb(182, 182, 182);
+          }
+          &.color3 {
+            background-color: rgb(131, 131, 131);
+          }
+          &.color4 {
+            background-color: rgb(63, 63, 63);
+          }
+          &.color5 {
+            background-color: rgb(8, 8, 8);
+          }
+          &.color6 {
+            background-color: rgb(44, 44, 51);
           }
         }
       }

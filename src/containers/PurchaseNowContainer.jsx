@@ -8,7 +8,9 @@ export default function PurchaseNowContainer() {
         Smooth reliable, responsive ready, perfect portfolio, unique blog layout
         and many many options for you
       </p>
-      <Button style={"basicButton accentColor"} text={"PURCHASE NOW"} />
+      <a href="#price">
+        <Button style={"basicButton accentColor"} text={"PURCHASE NOW"} />
+      </a>
     </div>
   );
 }

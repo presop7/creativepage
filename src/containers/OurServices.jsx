@@ -45,7 +45,7 @@ export default function OurServices() {
     },
   ];
   return (
-    <div className="ourServicesContainer">
+    <div className="ourServicesContainer" id="service">
       <div className="widthContainer">
         <div className="headingContainer">
           <h1>Our Services</h1>

@@ -51,7 +51,7 @@ export default function PricingTable() {
     },
   ];
   return (
-    <div className="pricingTableMainContainer">
+    <div className="pricingTableMainContainer" id="price">
       <div className="heading">
         <h1>Our Pricing Table</h1>
         <ShiftedDoubleLineBorder />

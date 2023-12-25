@@ -1,8 +1,15 @@
 .tab {
-  padding: 2rem 0;
+  // padding: 2rem 0;
   cursor: pointer;
-}
-.active {
-  color: var(--accent-color);
-  border-top: 2px solid var(--accent-color);
+  margin: 2rem 0;
+  padding: 0.2rem 0;
+
+  &:hover {
+    color: var(--accent-color);
+    border-top: 2px solid var(--accent-color);
+  }
+  &.active {
+    color: var(--accent-color);
+    border-top: 2px solid var(--accent-color);
+  }
 }

@@ -17,14 +17,14 @@ export default function MeetOurTeam() {
     { mainImage: "#", name: "Ronald", role: "Web Designer" },
   ];
   return (
-    <div className="meetOurTeamMainContainer">
+    <div className="meetOurTeamMainContainer" id="team">
       {/* Heading */}
       <h1>Meet Our Team</h1>
       <ShiftedDoubleLineBorder />
       {/* Card Container and Content */}
       <div className="teamCardsContainer">
         {cardData.map((content, index) => (
-          <div className="teamCard">
+          <div className="teamCard" key={index}>
             <div className="imgContainer">
               <img src={content.mainImage} alt="" className="teamMemberImage" />
               <div className="plusImageBox">

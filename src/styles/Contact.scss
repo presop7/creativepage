@@ -1,6 +1,6 @@
 .contactContainer {
   display: flex;
-  padding: 6rem 0;
+  padding: 4rem 1rem;
   gap: 1rem;
   flex-wrap: wrap;
   //   align-items: center;
@@ -8,13 +8,13 @@
   .mapLink {
     max-width: 40em;
     max-height: 29em;
+    min-height: 18rem;
     width: 100%;
-    height: 100%;
-    .mapButton {
-      iframe {
-        width: 100%;
-        height: 100%;
-      }
+    // height: 100%;
+
+    iframe {
+      width: 100%;
+      height: 100%;
     }
   }
 

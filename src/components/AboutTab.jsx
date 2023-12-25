@@ -1,7 +1,7 @@
 import React from "react";
 import "..//styles/AboutTabs/AboutTab.scss";
 const Tab = ({ label, onClick, isActive }) => (
-  <div className={`tab ${isActive ? "acitve" : ""}`} onClick={onClick}>
+  <div className={`tab ${isActive ? "active" : ""}`} onClick={onClick}>
     {label}
   </div>
 );

@@ -62,7 +62,7 @@ const featuresData = [
 export default function FeaturesCardsContainer() {
   return (
     <>
-      <div className="featureCardsContainer">
+      <div className="featureCardsContainer" id="testimonials">
         <h1>Creative Amazing Features</h1>
         <div className="lines">
           <ShiftedDoubleLineBorder />
