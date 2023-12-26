@@ -9,8 +9,9 @@
   justify-content: flex-start;
   background-color: #090f14;
   color: white;
+  width: 100%;
   .aboutImg {
-    max-width: 40%;
+    max-width: 50%;
     object-fit: fill;
     bottom: 0;
     margin-top: 12rem;
@@ -18,39 +19,56 @@
   .tabs-container {
     display: flex;
     flex-direction: column;
-    margin: 2rem 8rem;
-    max-width: 40rem;
+    padding: 2rem;
+    // max-width: 40rem;
     margin-top: 5rem;
     width: 100%;
-    .separatorLines {
+    .headingContainer {
       display: flex;
+      flex-direction: column;
       margin-top: 2rem;
-      margin-left: 7rem;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      width: max-content;
+      // justify-content: center;
+      // margin-left: 7rem;
     }
     .tabs {
       display: flex;
       gap: 1rem;
+      width: 100%;
     }
     .tab-content {
       width: 100%;
-      .barsContainer {
-        display: flex;
-        gap: 1rem;
-        flex-direction: column;
-        width: 100%;
-      }
-      .biographyTab {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-      }
+      max-width: 40rem;
+    }
+
+    .barsContainer {
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      width: 100%;
+    }
+    .biographyTab {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
     }
   }
 }
 
 @media screen and (max-width: 1200px) {
   .aboutTabsContainer {
+    display: flex;
     flex-direction: column;
+    // align-items: center;
+    .tabs-container {
+      align-items: center;
+      .tabs {
+        justify-content: center;
+      }
+    }
     .aboutImg {
       max-width: 100%;
       margin-top: 0;

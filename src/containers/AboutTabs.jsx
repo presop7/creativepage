@@ -14,9 +14,7 @@ const AboutTabs = ({ tabs }) => {
       <div className="tabs-container">
         <div className="headingContainer">
           <h1>About Our Company</h1>
-          <div className="separatorLines">
-            <ShiftedDoubleLineBorder />
-          </div>
+          <ShiftedDoubleLineBorder />
         </div>
 
         <div className="tabs">

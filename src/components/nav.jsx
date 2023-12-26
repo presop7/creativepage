@@ -16,8 +16,8 @@ export default function Nav() {
     <header>
       {/* Navigation Logo */}
       <div className="logo-container">
-        <a href="hero">
-          <img src={navLogo} alt="Navigation Logo" />
+        <a href="#home">
+          <img src={navLogo} alt="Navigation Logo" className="logo" />
         </a>
       </div>
       {/* Navigation links / Navigation menu */}

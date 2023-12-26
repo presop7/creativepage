@@ -1,7 +1,8 @@
 .heroContainer {
   display: flex;
   flex-direction: column;
-  padding: 6rem 12rem;
+  width: 100%;
+  padding: 6rem 10rem;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -36,6 +37,8 @@
     display: flex;
     margin-top: 6rem;
     gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
     a {
       all: unset;
     }
