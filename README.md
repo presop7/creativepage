@@ -1,6 +1,6 @@
 # Check out the live project
 
-https://medialist.vercel.app
+https://creativepage.vercel.app
 
 
 # Getting Started with Create React App
