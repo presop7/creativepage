@@ -31,7 +31,7 @@ export default function PromotingSection() {
             </div>
           ))}
           <a href="#price">
-            <Button style={"basicButton accentColor"} text={"PURCHASE NOW"} />
+            <Button css={"basicButton accentColor"} text={"PURCHASE NOW"} />
           </a>
         </div>
       </div>

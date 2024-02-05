@@ -36,7 +36,7 @@ export default function SecondRowOfCards() {
           img={content.img}
           number={content.number}
           description={content.description}
-          cardClass={"card cardStyle1 cardStyle2"}
+          cardClass={"card"}
         />
       ))}
     </div>

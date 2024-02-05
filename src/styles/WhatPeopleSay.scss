@@ -112,7 +112,7 @@
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
-        transition: 250ms ease-in-out;
+
         &::-webkit-scrollbar {
           display: none;
         }

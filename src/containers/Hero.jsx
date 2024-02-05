@@ -101,13 +101,13 @@ export default function Hero() {
       <div className="heroButtonContainer">
         <a href={content[currentIndex].buttonHref1}>
           <Button
-            style={"basicButton accentColor"}
+            css={"basicButton accentColor"}
             text={content[currentIndex].buttonText1}
           />
         </a>
         <a href={content[currentIndex].buttonHref2}>
           <Button
-            style={"basicButton specialColor"}
+            css={"basicButton specialColor"}
             text={content[currentIndex].buttonText2}
           />
         </a>

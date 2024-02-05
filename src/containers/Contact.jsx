@@ -72,6 +72,7 @@ export default function Contact() {
     <div className="contactContainer" id="contact">
       <div className="mapLink">
         <iframe
+          title="googlemaps"
           width="100%"
           height="100%"
           id="gmap_canvas"
@@ -122,7 +123,7 @@ export default function Contact() {
           {errors.message && <span className="error">*{errors.message}</span>}
           <Button
             type="submit"
-            style={"basicButton formSubmitButton accentColor"}
+            css={"basicButton formSubmitButton accentColor"}
             text={"SEND REQUEST"}
           />
         </form>

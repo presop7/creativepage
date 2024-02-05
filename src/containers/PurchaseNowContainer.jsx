@@ -9,7 +9,7 @@ export default function PurchaseNowContainer() {
         and many many options for you
       </p>
       <a href="#price">
-        <Button style={"basicButton accentColor"} text={"PURCHASE NOW"} />
+        <Button css={"basicButton accentColor"} text={"PURCHASE NOW"} />
       </a>
     </div>
   );
