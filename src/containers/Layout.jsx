@@ -1,5 +1,5 @@
-import Nav from "../components/Nav.jsx";
-import Footer from "../components/Footer.jsx";
+import Footer from "../components/Footer";
+import Nav from "../components/Header";
 
 export default function Layout({ children }) {
   return (
